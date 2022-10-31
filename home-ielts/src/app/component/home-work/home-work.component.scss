@@ -1,0 +1,91 @@
+#scroll-view-part::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #112e50;
+  }
+  
+  #scroll-view-part::-webkit-scrollbar {
+    width: 12px;
+    background-color: #112e50;
+  }
+  
+  #scroll-view-part::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgba(41, 130, 204, 0.7);
+  }
+  .home-work-part {
+    margin-top: 14px;
+    height: 529px;
+    width: 626px;
+    padding: 30px 40px;
+    background: rgba(17, 46, 80, 0.8);
+    border-radius: 20px;
+    overflow-y: scroll;
+    .part-style {
+      display: flex;
+    }
+    .excercier-part {
+      justify-content: space-between;
+      border-bottom: 2px solid #607d9f;
+      padding-bottom: 24px;
+      margin-bottom: 34px;
+      .study-part {
+        display: flex;
+        flex-direction: column;
+  
+        color: #fff;
+        margin-left: 24px;
+        h6 {
+          font-weight: 700;
+          font-size: 15px;
+          color: #bbd8ff;
+          line-height: 1.6;
+        }
+        p {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 1.6;
+        }
+      }
+  
+      .check-stardy-part {
+        width: 116px;
+  
+        .btn-check-part {
+          width: 100%;
+          align-items: center;
+          padding: 8px 16px;
+          border: none;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+          background: linear-gradient(
+            152.03deg,
+            #1890ff -19.27%,
+            #0069cc 109.91%
+          );
+          box-shadow: 6px 4px 25px rgba(24, 144, 255, 0.2);
+  
+          border-radius: 22px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
+  .respone-result {
+      display: flex;
+      justify-content: center;
+    .btn-respone {
+      background: #d9d9d9;
+      border-radius: 26px;
+      text-align: center;
+      cursor: pointer;
+      color: #8c8c8c;
+      font-weight: 300;
+      font-size: 20px;
+      padding: 11px 16px;
+    }
+  }
+  

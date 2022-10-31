@@ -31,11 +31,16 @@ export class LearnLessonComponent implements OnInit {
       "../../../assets/images/learning-progress-active.svg"),
 
   ];
+  
   selectedList : any;
   constructor() { }
 
   ngOnInit(): void {
     this.selectedList = this.navigations[0].productId;
+  }
+
+  learnPage(page:any): void {
+    this.selectedList = page
   }
 
 }

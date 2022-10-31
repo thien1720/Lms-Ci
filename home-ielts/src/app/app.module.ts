@@ -12,7 +12,12 @@ import { ContactComponent } from './component/contact/contact.component';
 import { LoginComponent } from './component/login/login.component';
 import { ReactFormComponent } from './component/react-form/react-form.component';
 import {NavBarComponent} from './component/nav-bar/nav-bar.component';
-import { LearnLessonComponent } from './component/learn-lesson/learn-lesson.component'
+import { LearnLessonComponent } from './component/learn-lesson/learn-lesson.component';
+import { LessonComponent } from './component/lesson/lesson.component';
+import { HomeWorkComponent } from './component/home-work/home-work.component';
+import { NoteComponent } from './component/note/note.component';
+import { ExtraPractiveComponent } from './component/extra-practive/extra-practive.component';
+import { ClassfoRumComponent } from './component/classfo-rum/classfo-rum.component'
 
 const router: Routes = [
   {path: '', component: ProductListComponent},
@@ -34,6 +39,11 @@ const router: Routes = [
     ReactFormComponent,
     NavBarComponent,
     LearnLessonComponent,
+    LessonComponent,
+    HomeWorkComponent,
+    NoteComponent,
+    ExtraPractiveComponent,
+    ClassfoRumComponent,
   ],
   imports: [
     BrowserModule,
