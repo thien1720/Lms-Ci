@@ -1,0 +1,157 @@
+<div class="page-home">
+
+    <div class="learnings">
+        <div class="option-learning" [ngClass]="{'active-learning': selectedList === pro.productId}"
+            *ngFor="let pro of products" (click)="openContent(pro.productId)">
+            <div class="img-learn">
+                <img src={{pro.productImg}} alt={{pro.productImgactive}} class="learn-nomal"
+                    [ngClass]="{'iteam-nomal': selectedList === pro.productId}" />
+                <img src={{pro.productImgactive}} alt={{pro.productImgactive}} class="learn-active learn-noactive"
+                    [ngClass]="{'iteam-active': selectedList === pro.productId}">
+
+            </div>
+            <div>
+                <p class="learning-title">{{pro.productTitle}}</p>
+            </div>
+        </div>
+
+    </div>
+    <ng-container *ngIf="selectedList === 1 ">
+        Learning Progress
+    </ng-container>
+
+    <ng-container *ngIf="selectedList === 2 ">
+
+        <div class="todo-list" id="todo-list">
+            <div class="head-todo-list">
+                <p>
+                    <img src="../../../assets/images/note-todo-list.svg" alt="note-todo-list">
+                    <span>Todo List For Today</span>
+                </p>
+                <p>Here are some suggested activities for you to complete today
+                </p>
+            </div>
+
+            <div class="check-complete">
+                <div class="option-complete">
+                    <div class="form-input">
+                        <input type="checkbox" id="completed" checked class="check-input">
+                        <div class="sub-complete">
+                            <label for="completed">
+                                Complete your quests and redeem FSEL coins for some cool goods
+                            </label>
+                            <span>Quest board</span>
+                        </div>
+                    </div>
+                    <div class="next-complete">
+                        <img src="../../../assets/images/next-complete.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="option-complete">
+                    <div class="form-input">
+                        <input type="checkbox" id="completed" class="check-input">
+                        <div class="sub-complete">
+                            <label for="completed">
+                                Complete your quests and redeem FSEL coins for some cool goods
+                            </label>
+                            <span>Quest board</span>
+                        </div>
+                    </div>
+                    <div class="next-complete">
+                        <img src="../../../assets/images/next-complete.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="option-complete">
+                    <div class="form-input">
+                        <input type="checkbox" id="completed" class="check-input">
+                        <div class="sub-complete">
+                            <label for="completed">
+                                Complete your quests and redeem FSEL coins for some cool goods
+                            </label>
+                            <span>Quest board</span>
+                        </div>
+                    </div>
+                    <div class="next-complete">
+                        <img src="../../../assets/images/next-complete.svg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="option-complete">
+                    <div class="form-input">
+                        <input type="checkbox" id="completed" class="check-input">
+                        <div class="sub-complete">
+                            <label for="completed">
+                                Complete your quests and redeem FSEL coins for some cool goods
+                            </label>
+                            <span>Quest board</span>
+                        </div>
+                    </div>
+                    <div class="next-complete">
+                        <img src="../../../assets/images/next-complete.svg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="option-complete">
+                    <div class="form-input">
+                        <input type="checkbox" id="completed" class="check-input">
+                        <div class="sub-complete">
+                            <label for="completed">
+                                Complete your quests and redeem FSEL coins for some cool goods
+                            </label>
+                            <span>Quest board</span>
+                        </div>
+                    </div>
+                    <div class="next-complete">
+                        <img src="../../../assets/images/next-complete.svg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="option-complete">
+                    <div class="form-input">
+                        <input type="checkbox" id="completed" class="check-input">
+                        <div class="sub-complete">
+                            <label for="completed">
+                                Complete your quests and redeem FSEL coins for some cool goods
+                            </label>
+                            <span>Quest board</span>
+                        </div>
+                    </div>
+                    <div class="next-complete">
+                        <img src="../../../assets/images/next-complete.svg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="option-complete">
+                    <div class="form-input">
+                        <input type="checkbox" id="completed" class="check-input">
+                        <div class="sub-complete">
+                            <label for="completed">
+                                Complete your quests and redeem FSEL coins for some cool goods
+                            </label>
+                            <span>Quest board</span>
+                        </div>
+                    </div>
+                    <div class="next-complete">
+                        <img src="../../../assets/images/next-complete.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+
+    <ng-container *ngIf="selectedList ===  3">
+        Skills Diagrams
+    </ng-container>
+
+
+    <ng-container *ngIf="selectedList === 4 ">
+        Units
+    </ng-container>
+</div>3

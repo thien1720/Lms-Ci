@@ -1,0 +1,83 @@
+.side-bar {
+  background-image: linear-gradient(to right, #091e37, #082f5e);
+  height: 768px;
+  position: relative;
+  .logo-img {
+    width: 56px;
+    object-fit: cover;
+  }
+  .logo-nav {
+    display: flex;
+    justify-content: center;
+    img {
+      margin-top: 53px;
+    }
+  }
+  .route-page {
+    display: flex;
+    justify-content: center;
+    ul {
+      margin-top: 128px;
+      list-style-type: none;
+      padding: 0;
+      li {
+        width: 45px;
+        height: 45px;
+        margin: 17px 0;
+        border-radius: 50%;
+      }
+      .page-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(
+          89.93deg,
+          rgba(24, 144, 255, 0.03) 2.77%,
+          rgba(28, 141, 243, 0.0235877) 28.01%,
+          rgba(41, 130, 204, 0.003) 109.06%
+        );
+
+        &:hover {
+          background: linear-gradient(
+            89.93deg,
+            #1890ff 2.77%,
+            rgba(28, 141, 243, 0.786255) 28.01%,
+            rgba(41, 130, 204, 0.1) 109.06%
+          );
+        }
+      }
+      .page-active{
+        display: none;
+      }
+
+      .page-book {
+        background: linear-gradient(
+          89.93deg,
+          #1890ff 2.77%,
+          rgba(28, 141, 243, 0.786255) 28.01%,
+          rgba(41, 130, 204, 0.1) 109.06%
+        );
+        .page-active{
+          display: block;
+        }
+        .page-noactive{
+          display: none;
+        }
+      }
+
+      img {
+        display: block;
+      }
+    }
+  }
+
+  .nav-bar {
+    position: absolute;
+    width: 14.57px;
+    height: 73px;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}

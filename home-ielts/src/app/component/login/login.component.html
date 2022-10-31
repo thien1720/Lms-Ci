@@ -1,0 +1,18 @@
+<div>
+    <p>login works!</p>
+    <form id="loginForm" #loginForm="ngForm"  (ngSubmit)="onSubmit(loginForm)">
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Example label</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder"
+                ngModel name="email" required minlength="6">
+        </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Password label</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder"
+                ngModel name="pass" required minlength="6">
+        </div>
+        <div class="sub-btn">
+            <button class="btn btn-primary">Button</button>
+        </div>
+    </form>
+</div>

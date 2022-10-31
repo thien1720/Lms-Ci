@@ -1,0 +1,4 @@
+.show-iteam {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}/*# sourceMappingURL=product-list.component.css.map */

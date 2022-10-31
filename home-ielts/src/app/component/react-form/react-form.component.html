@@ -1,0 +1,30 @@
+<div>
+    <p>login works!</p>
+    <form id="createForm" (ngSubmit)="onSubmit()" [formGroup]="productForm">
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Title label</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder"
+                name="email" formControlName="productTitle">
+        </div>
+        <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Card productImg</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder"
+                name="pass" formControlName="productImg">
+        </div>
+
+        <div class="sub-btn">
+            <button class="btn btn-primary">Button</button>
+        </div>
+    </form>
+
+
+    <div class="card" style="width: 18rem;" >
+        <img src="" alt="" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a  class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
