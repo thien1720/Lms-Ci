@@ -31,7 +31,7 @@ export class ProductListComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.selectedList = this.products[1].productId
+    this.selectedList = this.products[3].productId
   }
 
   openContent(page: any) {

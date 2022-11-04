@@ -682,21 +682,15 @@
         opacity: 1;
       }
 
-      .active-bell {
-        position: relative;
-        span {
-          position: absolute;
-          right: 20%;
-          top: -5px;
-          color: #fff;
-          background: #ff4d4f;
-          padding: 0px 4px;
-          box-shadow: 0px 0px 0px 1px #ffffff;
-          border-radius: 10px;
-        }
-        img {
-          position: absolute;
-        }
+      span {
+        position: absolute;
+        right: 20%;
+        top: -20px;
+        color: #fff;
+        background: #ff4d4f;
+        padding: 0px 4px;
+        box-shadow: 0px 0px 0px 1px #ffffff;
+        border-radius: 10px;
       }
     }
     .image-change-none {

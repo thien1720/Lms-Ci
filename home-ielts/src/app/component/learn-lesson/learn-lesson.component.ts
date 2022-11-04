@@ -12,23 +12,23 @@ export class LearnLessonComponent implements OnInit {
     new Product(1
       , "../../../assets/images/ic_round-lesstion.svg"
       , "Lesstion",
-      "../../../assets/images/learning-progress-active.svg"),
+      "../../../assets/images/ic_round-lesstion-2.svg"),
     new Product(2
       , "../../../assets/images/ic_round-home-work.svg"
       , " Homeword",
-      "../../../assets/images/learning-progress-active.svg"),
+      "../../../assets/images/ic_round-home-work-2.svg"),
     new Product(3
       , "../../../assets/images/ic_round-note-alt.svg"
       , "Notes",
-      "../../../assets/images/learning-progress-active.svg"),
+      "../../../assets/images/ic_round-note-alt-2.svg"),
     new Product(4
       , "../../../assets/images/ic_extra-practice.svg"
       , "Extra practice",
-      "../../../assets/images/learning-progress-active.svg"),
+      "../../../assets/images/ic_extra-practice-2.svg"),
     new Product(5
       , "../../../assets/images/ic-class-forum-2.svg"
       , "Class forum",
-      "../../../assets/images/learning-progress-active.svg"),
+      "../../../assets/images/ic-class-forum.svg"),
 
   ];
   

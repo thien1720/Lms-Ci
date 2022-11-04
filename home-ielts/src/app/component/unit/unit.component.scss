@@ -1,0 +1,190 @@
+#content-unit::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #112e50;
+}
+
+#content-unit::-webkit-scrollbar {
+  width: 12px;
+  background-color: #112e50;
+}
+
+#content-unit::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(41, 130, 204, 0.7);
+}
+
+.group-unit {
+  background: rgba(16, 44, 78, 0.6);
+  border-radius: 20px;
+  margin: 22px 21px 28px;
+  .title-unit {
+    display: flex;
+    align-items: center;
+    p {
+      font-family: "Helvetica Neue";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      color: #f0f0f0;
+      margin-left: 10px;
+    }
+  }
+
+  #content-unit {
+    overflow-y: scroll;
+  }
+
+  .content-unit {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    .level-lesson {
+      width: 235px;
+      height: 358px;
+      background: rgba(255, 255, 255, 0.11);
+      border-radius: 10px;
+
+      .item-level {
+        display: flex;
+        height: 34px;
+        align-items: center;
+        margin-right: 10px;
+        padding: 0 10px;
+        background: rgba(76, 98, 123, 0.1);
+        border-radius: 10px;
+        margin-bottom: 2px;
+        .name-level {
+          font-family: ".AG Fsel";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: #e3e3e3;
+          margin-left: 10px;
+        }
+      }
+
+      .level-pedding {
+        background: rgba(34, 126, 231, 0.94);
+        border: 0.5px solid #1c4d86;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    // svg
+    .lesson-completion {
+      position: relative;
+      svg {
+        transform: rotate(270deg);
+        circle {
+          stroke-width: 6px;
+          fill: none;
+        }
+        #under {
+          stroke: #ecf3fe;
+        }
+        #reverse {
+          stroke: #1890ff;
+          stroke-width: 10px;
+          stroke-dasharray: 327.345;
+          // 436.46 tính phần trăm bằng tổng * phần trăm / 100
+        }
+
+        // #fortmat-done{
+        //   display: flex;
+        //   flex-direction: column;
+        //   justify-content: center;
+        //   align-items: center;
+        //   color:#fff;
+        // }
+      }
+      .format-lesson-done {
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        left: 50%;
+        top: 16%;
+        transform: translateX(-50%);
+        .lesson-done {
+          font-family: "Helvetica Neue";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 116%;
+          color: #f0f0f0;
+        }
+        p:nth-child(2) {
+          font-family: ".AG Fsel";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 116%;
+          color: #f0f0f0;
+        }
+      }
+    }
+
+    .lesson-format {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      .lesson-format-options {
+        margin-top: 40px;
+      }
+      .format-options {
+        position: relative;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        img {
+          display: block;
+          width: 31px;
+          height: 31px;
+          z-index: 1;
+        }
+        .lesson-format-name {
+          margin-left: 24px;
+          font-family: "Helvetica Neue";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          color: #f0f0f0;
+        }
+
+        .line-check-format {
+          position: absolute;
+          width: 35px;
+          height: 0px;
+          top: 39px;
+          background-color: #003075;
+          border: 2px solid #003075;
+          transform: rotate(90deg);
+          left: -2px;
+        }
+        .line-active {
+          background-color: #1890ff;
+          border: 2px solid #1890ff;
+        }
+      }
+
+      .btn-continute {
+        width: 218px;
+        height: 39px;
+        background: #1890ff;
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        color: #fff;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    }
+  }
+}

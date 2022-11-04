@@ -1,0 +1,285 @@
+#level-unint {
+  display: flex;
+  justify-content: space-between;
+  .show-unit-level {
+    flex: 1;
+    position: relative;
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .show-progress {
+    position: absolute;
+    top: 70%;
+    right: 23%;
+  }
+  .unit-level-des {
+    text-align: center;
+    margin-bottom: 25px;
+    .title-unit {
+      font-weight: 700;
+      font-size: 40px;
+      // line-height: 22px;
+      background: linear-gradient(180deg, #fcff5d 0%, #117900 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .description-unit-level {
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+  .unit-level-complete {
+    width: 318px;
+    height: 38px;
+    background: #08002d;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      width: 30%;
+      height: 100%;
+      background: #bee13d;
+      box-shadow: 0px 0px 25px rgba(204, 255, 0, 0.34);
+      border-radius: 10px 0px 0px 10px;
+    }
+  }
+}
+#group-level::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #112e50;
+}
+
+#group-level::-webkit-scrollbar {
+  width: 12px;
+  background-color: #112e50;
+}
+
+#group-level::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(41, 130, 204, 0.7);
+}
+#group-level{
+  height: 622px;
+  overflow-y: scroll;
+}
+
+.group-option-level {
+  width: 385px;
+  margin-top: 50px;
+  background: rgba(17, 46, 80, 0.6);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  padding: 22px 0;
+  .style-level {
+    display: flex;
+  }
+  .level-pass {
+    justify-content: space-between;
+    align-items: center;
+    height: 77px;
+    margin: 0 38px 10px 20px;
+    background: rgba(39, 110, 191, 0.7);
+    border: 0.5px solid #1c4d86;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    cursor: pointer;
+    .box-level {
+      background: radial-gradient(50% 50% at 50% 50%, #5c95ec 0%, #3978c1 100%);
+      border: 0.5px solid #1c4d86;
+      border-radius: 15px;
+      width: 62px;
+      height: 62px;
+      margin: auto 8px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      .des-level {
+        font-size: 10px;
+      }
+      .level-count {
+        font-size: 16px;
+        font-weight: 800;
+      }
+    }
+    .level-description {
+      margin-top: 16px;
+      .title-level {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: #ffffff;
+      }
+      .check-level {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 162.7%;
+        color: #4caf50;
+        img {
+          display: inline-block;
+        }
+      }
+    }
+    .time-line {
+      height: 100%;
+      width: 95px;
+      position: relative;
+      .completed-time {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-41%);
+        top: 50%;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 10px;
+        color: #fff;
+      }
+      svg {
+        width: 100%;
+        height: 100%;
+        circle {
+          r: 25;
+          cx: 50;
+          cy: 40;
+        }
+        #bot {
+          stroke: #ffffff;
+          stroke-width: 10px;
+          fill: transparent;
+        }
+        #top {
+          stroke: green;
+          stroke-width: 5px;
+          fill: transparent;
+        }
+        #percent {
+          stroke-width: 5px;
+          fill: transparent;
+          stroke: #ff7500;
+          stroke-dasharray: 252;
+          stroke-dashoffset: 253;
+        }
+      }
+    }
+  }
+
+  // css full-fill
+  .level-fulfilled {
+    background: linear-gradient(19.68deg, #a2ce00 20.74%, #c6fa57 100.06%);
+    margin: 0 16px 16px 0;
+    height: 94px;
+    .box-level-fullfill {
+      background: radial-gradient(50% 50% at 50% 50%, #92c625 0%, #59bb0c 100%);
+      width: 77.39px;
+      height: 77.39px;
+      border: none;
+      .des-level {
+        font-weight: 400;
+        font-size: 14px;
+      }
+      .level-count {
+        font-weight: 700;
+        font-size: 40px;
+      }
+    }
+    .level-description-fullfill {
+      .title-level {
+        color: #272727;
+        font-weight: 700;
+      }
+      .check-level-fullfill {
+        color: #fa4b14;
+      }
+    }
+    .time-line-fullfill {
+      .completed-time {
+        font-weight: 700;
+        font-size: 15px;
+      }
+      svg {
+        circle {
+          r: 32;
+          cx: 50;
+          cy: 48;
+        }
+        #bot {
+          stroke: #ffffff;
+          stroke-width: 10px;
+          fill: transparent;
+        }
+        #top {
+          stroke: green;
+          stroke-width: 5px;
+          fill: transparent;
+        }
+        #percent {
+          stroke-width: 5px;
+          fill: transparent;
+          stroke: #ff7500;
+          stroke-dasharray: 252;
+          stroke-dashoffset: 200;
+        }
+      }
+    }
+  }
+
+  .level-no-done {
+    background: rgba(121, 143, 169, 0.6);
+    .box-no-done {
+      background: #8093b0;
+      border: none;
+    }
+    .level-description {
+      .check-level {
+        color: #7e7e7e;
+      }
+    }
+
+    .time-line {
+      height: 100%;
+      width: 95px;
+      position: relative;
+      // .completed-time {
+      //   position: absolute;
+      //   left: 50%;
+      //   transform: translateX(-41%);
+      //   top: 50%;
+      //   font-weight: 700;
+      //   font-size: 12px;
+      //   line-height: 10px;
+      //   color: #fff;
+      // }
+      svg {
+       
+        #bot {
+          stroke: rgba(255, 255, 255, 0.77);
+          stroke-width: 10px;
+          fill: transparent;
+        }
+        #top {
+          stroke: rgba(28, 77, 134, 0.65);
+          stroke-width: 5px;
+          fill: transparent;
+        }
+        #percent {
+          stroke-width: 5px;
+          fill: transparent;
+          stroke: #ff7500;
+          stroke-dasharray: 252;
+          stroke-dashoffset: 253;
+        }
+      }
+    }
+  }
+}

@@ -50,15 +50,23 @@
 
     <!-- navigation -->
     <div class="navigation">
-        <div class="navi style-grid" *ngFor="let navi of navigations"
-            [ngClass]="{'navi-lesstion': selectedList === navi.productId}" (click)="learnPage(navi.productId)">
-            <div class="image-change">
-                <img src={{navi.productImg}} alt={{navi.productImgactive}} class="learn-nomal"
+        <div class="navi style-grid " *ngFor="let navi of navigations"
+            [ngClass]="{'navi-lesstion': selectedList === navi.productId}" 
+            (click)="learnPage(navi.productId)"
+           
+            >
+            <div class="image-change active-bell" >
+                <img src={{navi.productImg}} alt={{navi.productImgactive}} 
+                    class="learn-nomal"
                     [ngClass]="{'iteam-nomal': selectedList === navi.productId}" />
                 <img src={{navi.productImgactive}} alt={{navi.productImgactive}} class="learn-noactive"
                     [ngClass]="{'iteam-active': selectedList === navi.productId}">
+
+                <span *ngIf="navi.productId === 5" class="total-bell">12</span>
             </div>
-            <p [ngClass]="{'title-active': selectedList === navi.productId}">
+            <p [ngClass]="{'title-active': selectedList === navi.productId}"
+                
+            >
                 {{navi.productTitle}}
             </p>
         </div>

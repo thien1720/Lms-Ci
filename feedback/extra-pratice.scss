@@ -1,0 +1,125 @@
+#scroll-view-part::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #112e50;
+}
+
+#scroll-view-part::-webkit-scrollbar {
+  width: 12px;
+  background-color: #112e50;
+}
+
+#scroll-view-part::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(41, 130, 204, 0.7);
+}
+.extra-practice {
+  padding: 21px 18px;
+  width: 626px;
+  height: 519 px;
+ 
+  margin-top: 14px;
+  background: rgba(17, 46, 80, 0.8);
+  border-radius: 20px;
+  // overflow: hidden;
+  overflow-y: scroll;
+  .extra-style {
+    display: flex;
+  }
+  .extra-writing {
+    border: 1px solid #0069cc;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.35);
+    border-radius: 30px;
+    padding: 18px 0 21px 18px;
+    margin-bottom: 20px;
+    .extra-title {
+      font-weight: 700;
+      font-size: 23px;
+      color: #fff;
+      border-bottom: 1px solid #adadad;
+      padding: 8px;
+      .style-extra-writing {
+        color: #00b1e3;
+      }
+      .style-extra-dblue {
+        color: #547fff;
+      }
+      .style-extra-yellow {
+        color: #ffaa00;
+      }
+      .style-extra-cri-low {
+        color: #ff563f;
+      }
+    }
+
+    .extra-suggest-active {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 10px;
+      color: #fff;
+      padding-right: 21px;
+      img {
+        display: block;
+        margin-right: 8px;
+      }
+      .success-description {
+        h6 {
+          display: block;
+          font-weight: 400;
+          font-size: 14px;
+          color: #adadad;
+          margin-bottom: 6px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          color: #e3e3e3;
+          span {
+            color: #1890ff;
+          }
+        }
+      }
+    }
+
+    .extra-course {
+      margin-top: 20px;
+      margin-right: 21px;
+      .extra-done-part {
+        margin-right: 18px;
+      }
+      .extra-option-course {
+        flex: 1;
+      }
+      .option-course {
+        background-color: #003b73;
+        border: 1px solid #003b73;
+        border-radius: 35.5px;
+        margin-bottom: 8px;
+        padding: 2px 6px;
+        img {
+          margin-right: 10px;
+        }
+        .extra-description-course {
+          color: #fff;
+          h6 {
+            font-weight: 400;
+            font-size: 15px;
+          }
+          p {
+            font-family: "Helvetica Neue";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: #d7d7d7;
+          }
+        }
+      }
+
+      .option-course-active {
+        background: linear-gradient(180deg, #1890ff 0%, #0069cb 100%);
+      }
+    }
+  }
+}

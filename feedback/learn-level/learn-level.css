@@ -1,0 +1,133 @@
+body {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+
+#level-up-learn::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #112e50;
+}
+
+#level-up-learn::-webkit-scrollbar {
+  width: 12px;
+  background-color: #112e50;
+}
+
+#level-up-learn::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(41, 130, 204, 0.7);
+}
+
+#level-up-learn {
+  overflow-y: scroll;
+}
+
+#learn .title-learn {
+  margin-top: 70px;
+  text-align: center;
+  color: #90e7ff;
+}
+#learn .title-learn .line-title-learn {
+  color: #ff8432;
+}
+#learn .title-learn .id-user {
+  color: #fefefe;
+  margin-top: 10px;
+}
+#learn .learn-level {
+  padding: 40px 106px 0;
+  position: relative;
+}
+#learn .sub-level {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 18px;
+}
+#learn .sub-level p {
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+#learn .level-1 {
+  position: absolute;
+}
+#learn .line-up-level {
+  display: inline-block;
+}
+#learn .line-up-level .line-1 {
+  position: absolute;
+  right: 32%;
+}
+#learn .line-up-level .fly {
+  position: absolute;
+  right: 50%;
+  top: -3px;
+}
+#learn .line-up-level .fly-nav {
+  position: absolute;
+  right: 48%;
+  top: 66px;
+}
+#learn .level-2 {
+  position: absolute;
+  left: 62%;
+  top: 70px;
+}
+#learn .line-up-level-2 img {
+  position: absolute;
+  right: 16%;
+  top: 163px;
+}
+#learn .level-3 {
+  position: absolute;
+  left: 44%;
+  top: 309px;
+}
+#learn .line-up-level-3 {
+  display: inline-block;
+  position: relative;
+  top: 325px;
+  left: 20%;
+}
+#learn .line-up-level-3 .up-level-3 {
+  position: absolute;
+  right: 60%;
+}
+#learn .level-4 {
+  position: absolute;
+  left: 20%;
+  top: 448px;
+}
+#learn .level-4 .sub-level {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: -30px;
+}
+#learn .line-up-level-4 {
+  display: inline-block;
+  position: relative;
+  top: 533px;
+  left: -2%;
+}
+#learn .line-up-level-4 .up-level-4 {
+  position: absolute;
+  right: 46%;
+  top: 70%;
+}
+#learn .level-5 {
+  position: absolute;
+  left: 73%;
+  top: 614px;
+}/*# sourceMappingURL=learn-level.css.map */
